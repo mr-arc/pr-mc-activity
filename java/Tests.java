@@ -53,7 +53,7 @@ public final class Tests {
                                   List<String> inventory,
                                   Map<String, List<String>> recipes) {
     return new TestCase(name, () -> {
-      boolean passed = CanCraft.canCraft(item, inventory, recipes) == expected;
+      boolean passed = Solution.canCraft(item, inventory, recipes) == expected;
       String result = passed ? "✅ PASSED" : "⛔ FAILED";
       String color = passed ? GREEN : RED;
       System.out.printf("  %s%s %s%s %s\n", color, result, BLUE, name, RESET);

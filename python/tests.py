@@ -1,4 +1,4 @@
-from can_craft import canCraft
+from solution import canCraft
 import traceback
 
 _RECIPES = {
